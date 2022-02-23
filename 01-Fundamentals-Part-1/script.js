@@ -201,7 +201,7 @@ console.log('23' / '2');
 let n = '1' + 1; // '11'
 n = n - 1;
 console.log(n);
-*/
+
 // 5 falsy values: 0, '', undefined, NaN
 console.log(Boolean(0));
 console.log(Boolean(undefined));
@@ -225,8 +225,74 @@ if(height){
 }
 
 
+const age = '18';
+if(age === 18) console.log('You just became an adult (strict)');
+if(age == 18) console.log('You just became an adult (loose)');
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if(favourite === 69) console.log('Cool! 69 is an amazing number!');
 
 
 
+const hasDriversLicence = true; //A
+const hasGoodVision = true; //B
+console.log(hasDriversLicence && hasGoodVision);
+console.log(hasDriversLicence || hasGoodVision);
+console.log(!hasDriversLicence);
 
+
+// if(hasDriversLicence && hasGoodVision) {
+//     console.log('Sarah is able to drive!');
+// }else {
+//     console.log('Someone else should drive...');
+// }
+
+const isTired = false; //C
+console.log(hasDriversLicence && hasGoodVision && isTired);
+
+if(hasDriversLicence && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!');
+}else {
+    console.log('Someone else should drive...');
+}
+
+
+
+const day = 'monday';
+switch(day) {
+    case 'monday':
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('Not a valid day!');
+        
+}
+*/
+
+const age = 23;
+// age >= 18 ? console.log('I like to drink wine') :
+// console.log('I like to drink water');
+
+const drink = age >= 18 ? 'Wine' : 'Water';
+console.log(drink);
+
+console.log(`I like to drink ${age >= 18 ? 'Wine' : 'Water'}`);
 

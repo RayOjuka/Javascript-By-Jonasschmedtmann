@@ -1,0 +1,19 @@
+{
+  "name": "javascript-by-jonasschmedtmann",
+  "version": "1.0.0",
+  "description": "JavaScript Fundamentals Part 1 course by Jonas Schmedtmann",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RayOjuka/Javascript-By-Jonasschmedtmann.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RayOjuka/Javascript-By-Jonasschmedtmann/issues"
+  },
+  "homepage": "https://github.com/RayOjuka/Javascript-By-Jonasschmedtmann#readme"
+}

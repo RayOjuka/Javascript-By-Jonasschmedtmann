@@ -43,22 +43,62 @@
 // const total = bills.map((bill, index) => bill + tips[index]);
 // console.log(total); // [143.75, 638.25, 52.8
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    birthYear: 1991,
-    job: 'teacher',
-    friends: ['Michael', 'Sarah', 'Jessica'],
-    hasDriverLicense: true,
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Sarah', 'Jessica'],
+//     hasDriverLicense: true,
 
-    // calcAge: function (birthYear) {
-    //     return 2023 - birthYear;
-    // }
+//     // calcAge: function (birthYear) {
+//     //     return 2023 - birthYear;
+//     // }
 
-    calcAge: function () {
-        return 2023 - this.birthYear;
+//     // calcAge: function () {
+//     //     console.log(this);
+//     //     return 2023 - this.birthYear;
+//     // }
+
+//     calcAge: function () {
+//         this.age = 2023 - this.birthYear;
+//         return this.age;
+//     }
+// };
+
+// console.log(jonas.calcAge()); // 32
+
+// console.log(jonas.age); // 32
+// console.log(jonas.age); // 32
+
+// // challenge
+// // "Jonas is a 32-year old teacher, and he has a driver's license"
+// console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has ${jonas.hasDriverLicense ? "a" : "no"} driver's license`);
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
     }
-};
+}
 
-console.log(jonas.calcAge()); // 32
-console.log(jonas['calcAge'](1991)); // 32
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+}
+
+//Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!".
+
+if (mark.calcBMI() > john.calcBMI()) {
+    console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`);
+} else {
+    console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})!`);
+}
